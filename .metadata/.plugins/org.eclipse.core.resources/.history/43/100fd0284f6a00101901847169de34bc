@@ -1,0 +1,25 @@
+package com.hccmoraes.stockproject.entities;
+
+
+public class Product {
+	
+	private Long id;
+	private String name;
+	private String unit;
+	private Double price;
+	
+	public Product () {
+		
+	}
+
+	public Product(Long id, String name, String unit, Double price) {
+		this.id = id;
+		this.name = name;
+		this.unit = unit;
+		this.price = price;
+	}
+	
+	
+	
+
+}

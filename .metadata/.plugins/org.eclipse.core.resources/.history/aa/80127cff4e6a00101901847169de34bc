@@ -1,0 +1,5 @@
+package com.hccmoraes.stockproject.entities;
+
+public class Product {
+
+}

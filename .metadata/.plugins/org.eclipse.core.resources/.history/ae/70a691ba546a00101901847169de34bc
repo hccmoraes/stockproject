@@ -1,0 +1,5 @@
+package com.hccmoraes.stockproject.resources;
+
+public class CategoryResource {
+
+}

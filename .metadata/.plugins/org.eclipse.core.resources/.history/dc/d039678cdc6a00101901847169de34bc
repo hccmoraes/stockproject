@@ -1,0 +1,25 @@
+package com.hccmoraes.stockproject.repositories;
+
+import java.util.List;
+
+import org.springframework.stereotype.Component;
+
+import com.hccmoraes.stockproject.entities.Category;
+
+
+
+@Component
+public class CategoryRepository {
+
+	public void save(Category obj) {
+		...
+	}
+
+	public Category findById(Long id) {
+		...
+	}
+	
+	public List<Category> findAll() {
+		...
+	}
+}

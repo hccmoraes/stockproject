@@ -1,0 +1,5 @@
+package com.hccmoraes.stockproject.repositories;
+
+public class CategoryRepository {
+
+}

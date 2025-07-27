@@ -1,7 +1,11 @@
 package com.hccmoraes.stockproject.entities;
 
 import java.io.Serializable;
+import java.util.ArrayList;
+import java.util.List;
 import java.util.Objects;
+
+import com.fasterxml.jackson.annotation.JsonIgnore;
 
 
 public class Category implements Serializable {
@@ -9,6 +13,9 @@ public class Category implements Serializable {
 		
 	private Long id;
 	private String name;
+	
+	@JsonIgnore
+	private List<Product> products = new ArrayList<>();
 	
 	public Category() {
 		
@@ -34,7 +41,13 @@ public class Category implements Serializable {
 	public void setName(String name) {
 		this.name = name;
 	}
+	
+	
+	public List<Product> getProducts() {
+		return products;
+	}
 
+	
 	@Override
 	public int hashCode() {
 		return Objects.hash(id);
